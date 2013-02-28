@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Afrails</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="bg">
+		<div class="main">
+			<div class="container_12">
+				<%= render 'layouts/header' %>
+			</div>
+		</div>
+	</div>
+
+<%= yield %>
+<footer>
+	<%= render 'layouts/footer' %>
+</footer>
+
+</body>
+</html>

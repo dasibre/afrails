@@ -1,0 +1,319 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+@import url(http://fonts.googleapis.com/css?family=Bitter);
+article,aside,audio,canvas,command,datalist,details,embed,figcaption,figure,footer,header,hgroup,keygen,meter,nav,output,progress,section,source,video{display:block}mark,rp,rt,ruby,summary,time{display:inline}
+/* Global properties ======================================================== */
+html {width:100%}
+
+body {font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:24px; color:#919499; min-width:1020px; background:url(../images/body_bg.png) 50% 0 repeat #e4e4e4; -webkit-text-size-adjust: none;}
+
+.main{width:1018px;margin: 0 auto;}
+
+.bg{background: url('../images/body_bg2.png') 0 bottom repeat-x;position: absolute;width:100%;left:0;right:0;min-height:100%;}
+/*********************************fonts*************************************/
+.reg {text-transform:uppercase}
+.f_left {float:left}
+.f_right {float:right}
+.align_right {text-align:right}
+.align_center {text-align:center}
+
+.it{font-style:italic}
+.let{letter-spacing:-1px}
+
+/*********************************CLASSES**********************************/
+.m_bottom_zero{ margin-bottom:0 !important;}
+.m_left_zero{ margin-left:0 !important;}
+.p_bottom_zero{ padding-bottom:0 !important;}
+.p_left_zero{ padding-left:0 !important;}
+
+.clear {clear:both;width:100%;line-height:0;font-size:0;}
+.wrapper {width:100%;overflow:hidden}
+.extra_wrapper{ overflow:hidden;}
+.container{width:100%}
+.extra_last, .last{ margin-bottom:0 !important; padding-bottom:0 !important;}
+.extra_last{ border:none !important; background:none !important;}
+.bg_none{ background:none !important;}
+
+/*==================================== Links ======================================================== */
+a {color:#919499;outline:none; text-decoration:none; cursor:pointer;}
+a:hover{ color:#2a6991; text-decoration:none;}
+
+/*********************************Displays*************************************/
+.block{ display:block;}
+.inline-block{ display:inline-block;}
+
+/*********************************header*************************************/
+
+header {padding:33px 0 0 25px;position: relative;z-index:10;}
+header h1{width:162px;height:163px;float: left;border-radius:50%;}
+header h1 a {
+	display:block;
+	width:162px;
+	border-radius:50%;
+	height:163px;
+	text-decoration:none;
+	text-indent:-9999px;
+	background-size:contain;
+	background-image: url(../images/afrailslogo.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+/*********************************content*************************************/
+#content {padding:0px 0px 0px 0px; margin-top:-41px;}
+.cont_pad{padding:0 0 0px 0 !important;margin-top:0;}
+
+/*===============================>> Paragraphs <<=============================*/
+
+p {margin-bottom:24px}
+.p2{ margin-bottom:14px;}
+
+/*================================>> LISTS <<========================================*/
+.list1{}
+.list1 li{ background:url(../images/marker1.png) 0 9px no-repeat; padding-left:12px; margin-bottom:14px;}
+.list1 a{color:#2a6991;font-size:12px;}
+.list1 a:hover{color:#000;}
+
+/*================================>> H <<========================================*/
+h2,h3,h4{ font-weight:normal;}
+h2{font-size: 30px; line-height: 38px; color:#183b51;margin-bottom:19px;}
+
+h2.ind{ margin-bottom:26px;}
+h2.ind1{ margin-bottom:18px;}
+
+h3, h3 a{font-size: 20px; line-height: 24px; color:#183b51;}
+h3.ind1{ margin-bottom:36px;}
+h3 a:hover{color:#3585b7;}
+/*================================>> GOOGLE FONTS  <<========================================*/
+.round_box .banner, h2, h3, .comment>div, .bitter, .membership_list a, .blog_info>div .title, .link2{font-family: 'Bitter', serif;}
+
+/*================================>> hovers <<========================================*/
+.round_next, .round_prev, .membership_list a{-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;}
+
+.light-box em, .light-box1 em, .light-box span{
+  -webkit-transition: all 700ms cubic-bezier(0.680, 0, 0.265, 1); /* older webkit */
+-webkit-transition: all 700ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+   -moz-transition: all 700ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+    -ms-transition: all 700ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+     -o-transition: all 700ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+        transition: all 700ms cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
+  
+}
+/*********************************page_1*************************************/
+.ext_list>li, .ext_box{ overflow:hidden;}
+.ext_list>li>figure, .ext_box>figure{ float:left;}
+.ext_list>li>div, .ext_box>div{overflow:hidden;}
+
+.slider_box{background: url('../images/slider_box.png') no-repeat;background-size:contain;min-height:75px;margin: -41px 0 0;padding-top:75px;position: relative;z-index:1;}
+
+.box1{border-radius: 0 0 10px 10px; margin-bottom:25px; background:#fff; box-shadow: 0 1px 0 1px #d1d1d1;}
+.box1 .inner{padding: 41px 0 40px;}
+.box2, .box3, .box4{border-radius:10px;background:#fff;box-shadow: 0 1px 0 1px #d1d1d1;margin-bottom:25px;text-align:center;}
+.box2 .inner{padding: 44px 0 47px;}
+.box3 .inner{padding: 44px 0 50px;}
+.box4{margin-bottom:0;text-align:left;}
+.box4 .inner{padding: 41px 0 45px;}
+
+.product{text-align:center;text-transform:uppercase;}
+.product h3{text-transform:none;}
+.product>a{display:block;margin-bottom:11px;}
+
+.light-box, .light-box1{display:inline-block;position: relative;overflow: hidden;}
+.light-box span,.light-box em,.light-box1 em{display:block;position: absolute;top:0;}
+.light-box span{width:110px;height:110px;background: url('../images/lb_circle.png') repeat;z-index:1;border-radius:49%;top:25%;left:28%;}
+.light-box em, .light-box1 em{left:40%;top:38%;width:60px;height:60px;background: url('../images/loop.png') no-repeat;z-index:2;}
+.light-box:hover em{top:-120%;}
+.light-box:hover span{top:120%;}
+
+.light-box1 em{top:-120%;background: url('../images/loop1.png') no-repeat;}
+.light-box1:hover em{top:38%;}
+
+.offer_box{background: url('../images/offer_stripe.png') 0px 161px repeat-x #fff;}
+.offer img{margin-bottom:22px;}
+.offer h3{margin-bottom:11px;}
+
+.comment{}
+.comment>div{}
+.comment .text{font-size: 30px; line-height: 38px; color: #929292;margin-bottom:14px;}
+.comment>figure{margin: 3px 36px 0 0;width:101px;height:106px;background: url('../images/comment_fig.png') 0px 5px no-repeat;}
+.comment .author{font-size:20px;line-height:24px;color:#c7c9ca;font-style:italic;}
+.comment span{font-style:normal;color:#2a6991;}
+
+.pad_box1{padding-top:41px !important;}
+/*********************************page_2*************************************/
+.top_box{background: url('../images/top_bg.png') 0px 0 no-repeat;background-size:contain;padding-top:74px;}
+.top_box .inner{background:#fff;padding: 13px 0 50px;border-radius: 0 0 10px 10px;box-shadow: 1px 1px 0 #d1d1d1;margin-right:1px;}
+
+.portfolio{background:#e8e9ea;padding:15px 15px 13px;text-transform:uppercase;}
+.portfolio h3{text-transform:none;margin-bottom:2px;}
+.portfolio img{margin-bottom:13px;}
+
+.m_bot1{margin-bottom:20px;}
+.m_bot2{margin-bottom:29px;}
+
+/*********************************page_3*************************************/
+.membership_list{}
+.membership_list>li{margin-bottom:8px;}
+.membership_list a{display:block;background:#e8e9ea;color:#183b51;font-size:23px;line-height:28px;padding: 10px 0 14px 19px;}
+.membership_list a:hover{background:#2a6991;color:#fff;}
+
+.client_box .client:first-child{margin-left:0;}
+.client{float: left;width:194px;margin-left:19px;}
+.client>a:first-child{display:block;margin-bottom:13px;}
+.client strong{color:#2a6991;}
+
+.link1{color:#2a6991;text-decoration:underline;}
+.link2{font-size: 17px; line-height: 22px; color: #183b51;display:inline-block;margin-top:14px;}
+/*********************************page_4*************************************/
+
+.blog_list{}
+.blog_list>li{margin-bottom:59px;}
+.blog_info{margin-bottom:7px;}
+.blog_info>div{padding-top:3px;}
+.blog_info>div .title{font-size: 22px; line-height: 27px; color: #183b51;}
+.blog_info>figure{margin: 0 15px 0 0;background: url('../images/big_marker.png') no-repeat;width:51px;text-align:center;padding: 7px 0 28px;font-size: 18px; line-height: 22px; color: #fff; font-weight:bold;}
+.blog_info>figure span{display:block;margin-top:-8px;}
+.blog_info .links{overflow: hidden;color:#2a6991;}
+.blog_info .links a{color:#2a6991;}
+.blog_info .links a:hover{color:#00005e;}
+.blog_info .links .posted{float: left;}
+.blog_info .links .comment{float: right;}
+
+.blue{color:#2a6991;}
+
+.blog>figure{margin: 2px 19px 0 0;}
+
+.categories{margin-bottom:53px;}
+
+/*********************************page_5*************************************/
+
+
+/* Contact form */
+#contact-form {padding:0px 0 0 0;}
+#contact-form .success {width:246px;  padding:10px;}
+#contact-form textarea, #contact-form input {margin:0;font-size:13px; border:1px solid #e5e5e5; color:#919499; padding:9px 13px;outline:none; position:relative; font-family:Arial, Helvetica, sans-serif;background:#fff;}
+#contact-form input {width:319px;float: left;}
+#contact-form textarea {overflow:auto; width:592px; height:255px;resize:none; float:left; margin: 0 0 0 0;}	
+#contact-form label {display:inline-block; min-height:46px; overflow:hidden;}
+#contact-form label.message { display:block; padding-bottom:0; }
+#contact-form .link2{margin-left:12px;}
+#contact-form .error, #contact-form .empty, #contact-form .success {display:none;}	
+#contact-form .error, #contact-form .empty {text-align:left; color:red; font-size:11px; float: left;}
+#contact-form .buttons2 {overflow:hidden;text-align:right; position:relative; clear:both; padding-top:25px;}
+#contact-form .buttons2 a {
+	cursor:pointer;
+	margin-top:0;
+	text-align:center;
+}
+#contact-form span{ display:block; margin: 0px 0 0 5px;}
+
+.map_wrapper{overflow:hidden;display:block;margin-bottom:24px;}
+#map_canvas {
+   width:100%;
+   height:315px;
+}
+.adress{}
+.adress span{ display:inline-block; width:83px;}
+.adress dt{}
+.adress dt strong{color:#2a6991;}
+
+.demo{}
+.demo:hover{ text-decoration:underline;}
+/****************************footer************************/
+footer {padding:21px 0 26px;text-transform:uppercase;}
+footer, footer a{color:#183b51;}
+footer a:hover{color:#929292;}
+footer .privacy{float: left;padding-top:4px;}
+footer .social{ overflow:hidden;float: right;}
+footer .social a{ display:block; float:left;width:31px;height:30px; overflow:hidden; margin-left:4px;}
+footer .social a:first-child{margin: 0 0 0 0;}
+footer .social a:hover img{ margin-top:-30px;}
+
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+@media only screen and (max-width: 995px) {
+ body{min-width:768px;}
+ .main{width:768px;}
+ .slider_box, .top_box{margin-top:-50px;padding-top:55px;}
+ header{position: relative;min-height:150px;}
+ header h1{position: absolute;}
+ header h1 a{width:150px;height:150px;}
+ .round_box{height:357px;}
+.round_box .banner, .comment .text{font-size: 24px; line-height: 29px;}
+.comment .text{padding-top:10px;}
+.client{margin-left:7px;width:158px;}
+#contact-form textarea{width:463px;}
+.flexslider .slides img{width:100%;}
+.flexslider .slides li>figure{padding:0 30px 0 20px;}
+.light-box em, .light-box1:hover em{left:33%;top:35%;}
+.light-box.light-box span{left:19%;top:21%;}
+.light-box1 img{width:100%;}
+}
+
+@media only screen and (max-width: 767px) {
+ body{min-width:420px;}
+ .main{width:420px;}
+ header h1{top:20px;}
+ .slider_box{background-image:none;background-color:#08151d;padding-top:20px;margin-top:0;border-radius:10px 10px 0 0;}
+ .top_box, .round_box .banner{background-image:none;}
+ .top_box .inner{border-radius:10px;padding-top:25px;}
+ .round_box .banner .inner{padding:25px 20px 0 30px;}
+ .box1, .box2, .box3{}
+ .offer_box{background-image:none;}
+ .pad_box{padding:0 20px;}
+ .blog>figure img, .client img, .product img, .clients img, .portfolio img{width:100%;}
+ .light-box em, .light-box1:hover em{left:45%;top:46%;}
+ .light-box span{left:38%;top:39%;}
+ .comment .text{font-size: 20px; line-height: 24px;}
+ .client{width:auto;margin-left:0 !important;margin-bottom:20px;float: none;}
+ .m_bot1, .m_bot2{margin-bottom:20px;}
+ .client_box.m_bot2{margin-bottom:0;}
+ .top_box{margin-top:0;}
+ .blog>div{overflow: visible;}
+ #contact-form textarea, #contact-form input{width:350px;}
+ #map_canvas{height:200px;}
+ .flexslider .slides li>figure{padding:0 0px 0 0px;}
+ .flexslider{margin-left:20px;margin-right:20px;}
+ .round_box{height:309px;}
+ .flex-direction-nav .flex-next{right:20px;}
+ .flex-direction-nav .flex-prev{left:20px;}
+ .light-box1{display:block;}
+}
+
+@media only screen and (max-width: 479px) {
+ body{min-width:300px;}
+ .main{width:300px;}
+ .round{width:300px;}
+ .round_box .banner{font-size: 20px; line-height: 24px;}
+ nav{padding-top:150px;float: none;width:auto;margin:0 10px;}
+ header{padding-left:0;}
+ header h1{left:70px;}
+ .light-box em, .light-box1:hover em{left:42%;top:42%;}
+ .light-box span{left:32%;top:32%;}
+ .comment>figure{display:none;}
+ .blog_info .links>div{float: none !important;}
+.blog_info > div .title{font-size:19px;line-height:23px;}
+ .blog>figure{float: none;margin: 0 0 20px 0;}
+ #contact-form textarea, #contact-form input{width:232px;}
+ footer .privacy{margin-bottom:15px;}
+ footer .privacy, footer .social{float: none;}
+ .flexslider{margin-left:0px;margin-right:0px;}
+ .round_box{height:290px;}
+}
+
+/****************************Header tag: added by JN************************/
+.bg .main .slider_box .round_box .banner .inner span {
+	color: #F93;
+	text-decoration: underline;
+}
