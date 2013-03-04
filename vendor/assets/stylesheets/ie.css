@@ -1,0 +1,4 @@
+.box1,.box2,.box3, .box4, .top_box .inner{behavior:url(js/PIE.htc);position:relative;}
+.light-box em, .light-box span{behavior:url(js/PIE.htc);}
+
+.slider_box{background: url('../images/slider_box_ie.png') no-repeat;}

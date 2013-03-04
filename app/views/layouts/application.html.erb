@@ -2,7 +2,13 @@
 <html>
 <head>
   <title>Afrails</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag 'reset.css', :media => "screen, projection" %>
+  <%= stylesheet_link_tag 'skeleton.css', :media => "screen, projection" %>
+  <%= stylesheet_link_tag 'superfish.css', :media => "screen, projection" %>
+  <%= stylesheet_link_tag 'flexslider.css', :media => "screen, projection" %>
+  <%= stylesheet_link_tag 'touchTouch.css', :media => "screen, projection" %>
+<!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie', :media => "screen, projection" %><![endif]-->
+  <%= stylesheet_link_tag "application.css", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
@@ -12,13 +18,14 @@
 			<div class="container_12">
 				<%= render 'layouts/header' %>
 			</div>
-		</div>
-	</div>
+	
 
 <%= yield %>
+	</div>
+	
 <footer>
 	<%= render 'layouts/footer' %>
 </footer>
-
+</div>
 </body>
 </html>

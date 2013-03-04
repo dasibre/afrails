@@ -1,0 +1,58 @@
+nav{ position:relative; margin: 0px 0 0 0;float: right;padding:66px 0 0;}
+.sf-menu ul {position:absolute;top:-999px; display:none;/* left offset of submenus need to match (see below) */}
+.sf-menu ul li {width:100%}
+.sf-menu li {float:left;position:relative}
+
+.sf-menu>li>a{display:block;position:relative; font-size: 13px; line-height: 17px; color:#2f2f2f;text-transform:uppercase;font-weight:bold;}
+.sf-menu>li>a:hover,.sf-menu>li.current>a,.sf-menu>li.sfHover>a{color:#626262;}
+
+.sf-menu>li{margin-left:47px;}
+.sf-menu a{}
+
+/*================================>> 2 Level <<========================================*/
+.sf-menu li ul,.sf-menu li.sfHover ul{left:18px;top:33px;width: 140px;background: url('../images/sub_ul.png') 0 bottom repeat-x #58a5c4;padding:15px 0 12px; z-index:99;text-align:center;}
+.sf-menu li ul li{margin-bottom:4px;}
+.sf-menu li ul li a{color:#ffffff;text-transform:uppercase;font-size:12px;}
+.sf-menu li li a:hover, .sf-menu li.sfHover li.sfHover>a{color:#c2c2c2;}
+
+.sf-menu li li ul:before, .sf-menu li ul:before,.sf-menu li.sfHover ul:before{display:block;position: absolute;content:"";}
+
+.sf-menu>li>ul:before,.sf-menu>li.sfHover>ul:before{width:11px;height:6px;background: url('../images/sub_bef1.png') no-repeat;top:-6px;left:14px;}
+/*================================>> 3 Level <<========================================*/
+.sf-menu li li ul{left:151px !important;top:-4px !important;padding:0 0 0 0;z-index:99;background: url('../images/sub_ul2.png') 0 bottom repeat-x #224c6b !important;}
+.sf-menu li li ul:before{width:6px;height:11px;left:-5px;top:13px;background: url('../images/sub_bef2.png') no-repeat;}
+/*==================================RESPONSIVE LAYOUTS============================================*/
+.sf-menu li a .menu-arrow{display:inline-block; width:5px;margin-left:5px;height:3px;text-indent:-100%; font-size:0; line-height:0;background: url('../images/menu_arrow.png') no-repeat;vertical-align: middle;}
+	 .sf-menu a:hover .menu-arrow, .sf-menu li.current>a .menu-arrow, .sf-menu .sfHover>a:hover .menu-arrow{background-position:0;}
+@media only screen and (max-width: 995px) {
+	 
+}
+
+@media only screen and (max-width: 767px) {
+  nav{
+		float:right;
+    width:220px;
+		font:12px/15px Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		color:#183B51;
+		padding:29px 0;
+	}
+		nav:before{
+			content:'Menu:';
+			display:block;
+			margin-bottom:5px;
+		}
+	.sf-menu{display:none;}
+	nav select{
+    outline: none;
+		font:12px/15px Arial, Helvetica, sans-serif;
+		color:#464646;
+		width:100%;
+		border:2px solid #9e9e9e;
+	}
+	
+}
+
+@media only screen and (max-width: 479px) {
+	
+}
