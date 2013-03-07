@@ -1,6 +1,10 @@
 Afrails::Application.routes.draw do
 
   match 'home', :to => 'home#index'
+  match 'portfolio', :to => 'home#portfolio'
+  match 'clients', :to => 'home#clients'
+  match 'blog', :to => 'home#blog'
+  match 'mail_us', :to => 'home#mail_us'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

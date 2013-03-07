@@ -5,14 +5,19 @@
     %nav
       %ul.sf-menu
         %li.current
-          %a{:href => "index.html"} about us
+          -#%a{:href => "index.html"} about us
+          = link_to 'home', home_path
         %li
-          %a{:href => "index-1.html"} portfolio
+          -#%a{:href => "index-1.html"} portfolio
+          = link_to 'portfolio', portfolio_path
         %li
-          %a{:href => "index-2.html"} clients
+          -#%a{:href => "index-2.html"} clients
+          -#= link_to 'clients', clients_url
         %li
-          %a{:href => "index-3.html"} blog
+          -#%a{:href => "index-3.html"} blog
+          -#= link_to 'blog', blog_url
         %li
-          %a{:href => "index-4.html"} mail us
+          -#%a{:href => "index-4.html"} mail us
+          -#= link_to 'mail us', mail_us_path
       .clear
     .clear
