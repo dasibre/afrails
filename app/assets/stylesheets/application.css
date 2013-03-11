@@ -170,7 +170,7 @@ h3 a:hover{color:#3585b7;}
 .membership_list a:hover{background:#2a6991;color:#fff;}
 
 .client_box .client:first-child{margin-left:0;}
-.client{float: left;width:194px;margin-left:19px;}
+.client{float: left;width:194px;height:350px;margin-left:19px;}
 .client>a:first-child{display:block;margin-bottom:13px;}
 .client strong{color:#2a6991;}
 
