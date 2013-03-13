@@ -7,6 +7,7 @@ Afrails::Application.routes.draw do
   match 'clients', :to => 'home#clients'
   match 'blog', :to => 'home#blog'
   match 'mail_us', :to => 'home#mail_us'
+  mount Blogit::Engine => "/blog"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
