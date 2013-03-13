@@ -1,5 +1,7 @@
 Afrails::Application.routes.draw do
 
+  devise_for :users
+
   match 'home', :to => 'home#index'
   match 'portfolio', :to => 'home#portfolio'
   match 'clients', :to => 'home#clients'
