@@ -1,0 +1,33 @@
+<section id="content">
+<div class="top_box">
+<div class="inner">
+<div class="container_12">
+<div class="wrapper">
+<article class="grid_8">
+<div class="pad_box">
+ <h2 class="ind">Blogging is fun, oh really</h2>
+	<ul class="blog_list">
+<%= login_required class: "actions", id: "new_blog_post_link" do %>
+  <%= link_to t(:new_blog_post, scope: 'blogit.posts'), new_post_path %>
+<% end %>
+
+<% if @posts.any? %>
+  <%= render partial: "blogit/posts/post",
+    collection: @posts,
+    spacer_template: "blog_post_spacer",
+    locals: {show_comments_count: (Blogit.configuration.include_comments == :active_records) }  %>
+<% else %>
+
+  <%= render partial: "blogit/posts/empty" %>
+
+<% end %>
+
+<%= render "pagination" %>
+</ul>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</section>

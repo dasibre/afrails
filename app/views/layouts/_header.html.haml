@@ -12,12 +12,13 @@
           = link_to 'portfolio', portfolio_path
         %li
           -#%a{:href => "index-2.html"} clients
-          = link_to 'blog', blog_url
-        %li
-          -#%a{:href => "index-3.html"} blog
-          -#= link_to 'blog', blog_url
+          = link_to 'blog', '/blog/posts'
+        -if user_signed_in?
+          %li
+            -#%a{:href => "index-3.html"} blog
+            = link_to 'Sign out', destroy_user_session_path, method: :delete
         %li
           -#%a{:href => "index-4.html"} mail us
-          -#= link_to 'mail us', mail_us_path
+          = link_to 'mail us', mail_us_path
       .clear
     .clear
