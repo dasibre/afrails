@@ -1,5 +1,5 @@
 Afrails::Application.routes.draw do
-
+  resources :contacts, :only => [:new, :create]
   devise_for :users
 
   match 'home', :to => 'home#index'
