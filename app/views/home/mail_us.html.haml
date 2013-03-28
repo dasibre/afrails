@@ -24,14 +24,14 @@
           %article.grid_8.last-col
             .pad_box
               %h2.ind Get in Touch
-              = form_for(@contact, :html => { :id => "contact-form" }) do |f|
+              = form_for(@contact, :validate => true, :html => { :id => "contact-form" }) do |f|
                 .success
                   Contact form submitted!
                   %br
                     %strong We will be in touch soon.
                 %fieldset
                   %label.name
-                    = f.text_field :name, :value => "Name"
+                    = f.text_field :name, :class => "contact_name", :value => "Name"
                     -#%input{:type => "text", :value => "Name:"}
                       %span.error *This is not a valid name.
                       %span.empty *This field is required.
