@@ -1,0 +1,7 @@
+<%= content_tag(:div, :class => "ext_box blog_info") do %>
+<figure><%= time_tag(post.created_at, blogit_conf.datetime_format) %></figure>
+<div>
+  <%= content_tag(:div, post.title, :class => "title") %>
+ </div>
+  Written by <%= post.blogger_display_name %>
+<% end %>

@@ -1,12 +1,13 @@
 Afrails::Application.routes.draw do
-
+  resources :contacts, :only => [:new, :create]
   devise_for :users
 
   match 'home', :to => 'home#index'
   match 'portfolio', :to => 'home#portfolio'
   match 'clients', :to => 'home#clients'
-  match 'blog', :to => 'home#blog'
+  #match 'blog', :to => 'home#blog'
   match 'mail_us', :to => 'home#mail_us'
+  mount Blogit::Engine => "/blog"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -56,7 +57,7 @@ Afrails::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'home#index'
 
   # See how all your routes lay out with "rake routes"
 

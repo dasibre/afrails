@@ -15,3 +15,4 @@
 //= require jquery.flexslider
 //= require touchTouch.jquery
 //= require_tree .
+//= require rails.validations

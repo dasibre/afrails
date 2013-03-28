@@ -43,11 +43,12 @@ group :development, :test do
   gem 'better_errors'
   gem 'pry'
   gem 'html2haml'
-  #gem 'install_theme'
+  gem 'client_side_validations'
 end
 
 group :production do
   #gem 'mysql2'
+  gem 'client_side_validations'
 end
 
 # To use ActiveModel has_secure_password

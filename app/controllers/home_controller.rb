@@ -6,6 +6,9 @@ class HomeController < ApplicationController
 	def portfolio
 	end
 
-	def blog
-	end
+	 def blog
+	 end
+
+	 def mail_us
+	 end
 end

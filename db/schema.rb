@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130313004630) do
+ActiveRecord::Schema.define(:version => 20130327005720) do
 
   create_table "blog_comments", :force => true do |t|
     t.string   "name",       :null => false
@@ -37,6 +37,15 @@ ActiveRecord::Schema.define(:version => 20130313004630) do
   end
 
   add_index "blog_posts", ["blogger_type", "blogger_id"], :name => "index_blog_posts_on_blogger_type_and_blogger_id"
+
+  create_table "contacts", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "phone"
+    t.text     "message"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "taggings", :force => true do |t|
     t.integer  "tag_id"
@@ -68,6 +77,7 @@ ActiveRecord::Schema.define(:version => 20130313004630) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "username"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
