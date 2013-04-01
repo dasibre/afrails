@@ -31,22 +31,16 @@
                     %strong We will be in touch soon.
                 %fieldset
                   %label.name
-                    = f.text_field :name, :class => "contact_name", :value => "Name"
+                    = f.text_field :name, :class => "contact_name", :placeholder => "Name"
                     -#%input{:type => "text", :value => "Name:"}
                       %span.error *This is not a valid name.
                       %span.empty *This field is required.
                   %label.email
-                    %input{:type => "text", :value => "E-mail:"}
-                      %span.error *This is not a valid email address.
-                      %span.empty *This field is required.
+                    = f.text_field :email, :placeholder => "Email"
                   %label.phone
-                    %input{:type => "text", :value => "Phone:"}
-                      %span.error *This is not a valid phone number.
-                      %span.empty *This field is required.
+                    = f.text_field :phone, :placeholder => "Phone"
                   %label.message
-                    %textarea Message:
-                    %span.error *The message is too short.
-                    %span.empty *This field is required.
+                    = f.text_area :message, :placeholder => "Message"
                   .buttons2
                     %a.link2{"data-type" => "reset", :href => "#"} Clear
-                    %a.link2{"data-type" => "submit", :href => "#"} Submit
+                    = f.submit "Submit"
