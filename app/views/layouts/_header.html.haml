@@ -2,6 +2,7 @@
   %header
     %h1
       %a.logo{:href => "index.html"} ou
+      - display_notice
     %nav
       %ul.sf-menu
         %li.current
@@ -19,6 +20,6 @@
             = link_to 'Sign out', destroy_user_session_path, method: :delete
         %li
           -#%a{:href => "index-4.html"} mail us
-          = link_to 'Contact Us', mail_us_path
+          = link_to 'Contact Us', new_contact_path
       .clear
     .clear
