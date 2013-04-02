@@ -37,12 +37,14 @@ group :development, :test do
   gem 'pry'
   gem 'html2haml'
   gem 'client_side_validations'
+  gem 'blogit'
+  gem 'devise'
+  gem 'sqlite3'
 end
 
 group :production do
   gem 'mysql2'
-  gem 'client_side_validations'
-  gem 'sqlite3'
+  gem 'client_side_validations' 
   #gem 'mysql2'
   gem 'blogit'
   gem 'devise'
