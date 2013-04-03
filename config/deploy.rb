@@ -2,15 +2,9 @@
 #load path
 require 'rvm/capistrano'
 require 'bundler/capistrano'
-#set :ssh_options, {:forward_agent => true}
+ssh_options[:forward_agent] = true
+
 set :rvm_type, :user
-#set :default_environment, {
-#  'PATH' => "/usr/local/rvm/gems/ruby-1.9.3-p374@rails3/bin:/usr/local/rvm/rubies/ruby-1.9.3-p374/bin:/usr/local/rvm/bin:$PATH",
-#  'RUBY_VERSION' => 'ruby 1.9.3-p374',
-#  'GEM_HOME'     => '/usr/local/rvm/gems/ruby-1.9.3-p374@rails3',
-#  'GEM_PATH'     => '/usr/local/rvm/gems/ruby-1.9.3-p374@rails3:/usr/local/rvm/gems/ruby-1.9.3-p374@global',
-  #'BUNDLE_PATH'  => '/path/to/.rvm/gems/ree-1.8.7-2010.01'  # If you are using bundler.
-#}
 set :repository,  "git@github.com:dasibre/afrails.git"
 set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
@@ -44,6 +38,8 @@ set :use_sudo, false
 
    desc "Symlink shared configs and folders on each release."
   task :symlink_shared do
+    run "mkdir -p #{shared_path}/config"
+    put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
     run "ln -nfs #{shared_path}/assets #{release_path}/public/assets"
   end
