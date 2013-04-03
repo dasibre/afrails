@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
-	
+
 	def new
 		@contact = Contact.new
 		render 'home/mail_us'
