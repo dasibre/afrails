@@ -2,8 +2,15 @@
 #load path
 require 'rvm/capistrano'
 require 'bundler/capistrano'
-
-set :rvm_type, :system
+#set :ssh_options, {:forward_agent => true}
+set :rvm_type, :user
+#set :default_environment, {
+#  'PATH' => "/usr/local/rvm/gems/ruby-1.9.3-p374@rails3/bin:/usr/local/rvm/rubies/ruby-1.9.3-p374/bin:/usr/local/rvm/bin:$PATH",
+#  'RUBY_VERSION' => 'ruby 1.9.3-p374',
+#  'GEM_HOME'     => '/usr/local/rvm/gems/ruby-1.9.3-p374@rails3',
+#  'GEM_PATH'     => '/usr/local/rvm/gems/ruby-1.9.3-p374@rails3:/usr/local/rvm/gems/ruby-1.9.3-p374@global',
+  #'BUNDLE_PATH'  => '/path/to/.rvm/gems/ree-1.8.7-2010.01'  # If you are using bundler.
+#}
 set :repository,  "git@github.com:dasibre/afrails.git"
 set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
