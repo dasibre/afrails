@@ -2,8 +2,9 @@
 #load path
 require 'rvm/capistrano'
 require 'bundler/capistrano'
+ssh_options[:forward_agent] = true
 
-set :rvm_type, :system
+set :rvm_type, :user
 set :repository,  "git@github.com:dasibre/afrails.git"
 set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
@@ -37,6 +38,8 @@ set :use_sudo, false
 
    desc "Symlink shared configs and folders on each release."
   task :symlink_shared do
+    run "mkdir -p #{shared_path}/config"
+    put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
     run "ln -nfs #{shared_path}/assets #{release_path}/public/assets"
   end

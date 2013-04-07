@@ -38,6 +38,7 @@ group :development, :test do
   gem 'html2haml'
   gem 'client_side_validations'
   gem 'sqlite3'
+  #gem 'sqlite3'
   gem 'blogit'
   gem 'devise'
 end
@@ -45,8 +46,11 @@ end
 group :production do
   #gem 'mysql2'
   gem 'client_side_validations' 
+  #gem 'mysql2'
+  gem 'client_side_validations' 
   gem 'blogit'
   gem 'devise'
+  gem 'haml-rails'
 end
 
 # To use ActiveModel has_secure_password
@@ -59,7 +63,7 @@ end
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+ gem 'rvm-capistrano'
 
 # To use debugger
 # gem 'debugger'
