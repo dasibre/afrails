@@ -41,10 +41,9 @@ group :development, :test do
   gem 'blogit'
   gem 'devise'
 end
-end
 
 group :production do
-  gem 'mysql2'
+  #gem 'mysql2'
   gem 'client_side_validations' 
   gem 'blogit'
   gem 'devise'

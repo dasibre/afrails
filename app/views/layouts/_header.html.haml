@@ -1,13 +1,14 @@
 .grid_12
   %header
     %h1
-      %a.logo{:href => "index.html"} ou
+      = link_to 'home', root_path, :class => "logo"
+      -#%a.logo{:href => "index.html"} ou
       - display_notice
     %nav
       %ul.sf-menu
         %li.current
           -#%a{:href => "index.html"} about us
-          = link_to 'home', home_path
+          = link_to 'home', root_path
         %li
           -#%a{:href => "index-1.html"} portfolio
           = link_to 'portfolio', portfolio_path

@@ -9,7 +9,7 @@ set :scm, :git # You can set :scm explicitly or Capistrano will make an intellig
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
  set :branch, "master"
 
-set :application, "afrails.com"
+set :application, "afrails"
 role :web, "184.106.136.67"                         	 # Your HTTP server, Apache/etc
 role :app, "184.106.136.67"                          # This may be the same as your `Web` server
 role :db,  "184.106.136.67", :primary => true # This is where Rails migrations will run
