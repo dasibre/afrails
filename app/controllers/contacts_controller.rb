@@ -8,8 +8,8 @@ class ContactsController < ApplicationController
 	def create
 		@contact = Contact.new(params[:contact])
 		if @contact.save
-			redirect_to '/'
-			flash.now[:notice] = "Thank you for choosing to work with us, we will get back to you within 48hrs"
+			redirect_to '/contacts/new'
+			flash[:notice] = "Thank you for choosing to work with us, we will get back to you within 48hrs"
 
 		else
 			render 'new'

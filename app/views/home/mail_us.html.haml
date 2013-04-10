@@ -24,6 +24,7 @@
           %article.grid_8.last-col
             .pad_box
               %h2.ind Get in Touch
+              %strong= flash[:notice]
               = form_for(@contact, :validate => true, :html => { :id => "contact-form" }) do |f|
                 .success
                   Contact form submitted!

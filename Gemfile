@@ -44,9 +44,8 @@ group :development, :test do
 end
 
 group :production do
-  #gem 'mysql2'
+  gem 'pg'
   gem 'client_side_validations' 
-  #gem 'mysql2'
   gem 'client_side_validations' 
   gem 'blogit'
   gem 'devise'
@@ -60,7 +59,7 @@ end
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+  gem 'unicorn'
 
 # Deploy with Capistrano
  gem 'rvm-capistrano'
