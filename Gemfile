@@ -44,7 +44,7 @@ group :development, :test do
 end
 
 group :production do
-  gem 'posgresql'
+  gem 'pg'
   gem 'client_side_validations' 
   gem 'client_side_validations' 
   gem 'blogit'
