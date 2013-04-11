@@ -10,7 +10,7 @@ ssh_options[:forward_agent] = true
 
 set :rvm_type, :user 
 
-set :repository,  "git@github.com:dasibre/afrails.git"
+set :repository, "git://github.com/dasibre/afrails.git"
 set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 set :branch, "master"
