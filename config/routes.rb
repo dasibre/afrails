@@ -1,6 +1,7 @@
 Afrails::Application.routes.draw do
   resources :contacts, :only => [:new, :create]
-  devise_for :users
+  devise_for :users, :path => '', path_names: {sign_in: "afadmin", sign_out: "logout"}
+  #get 'login', => "devise/sessions#new"
 
   match 'home', :to => 'home#index'
   match 'portfolio', :to => 'home#portfolio'

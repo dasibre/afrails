@@ -19,6 +19,7 @@ end
 gem 'jquery-rails'
 
 group :development, :test do
+  gem 'therubyracer'
   gem 'annotate'
   gem 'rspec-rails', '>= 2.0.1'
   gem 'cucumber-rails'
@@ -50,6 +51,8 @@ group :production do
   gem 'blogit'
   gem 'devise'
   gem 'haml-rails'
+  gem 'unicorn'
+  gem 'rvm-capistrano'
 end
 
 # To use ActiveModel has_secure_password
@@ -59,10 +62,10 @@ end
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-  gem 'unicorn'
+  
 
 # Deploy with Capistrano
- gem 'rvm-capistrano'
+ 
 
 # To use debugger
 # gem 'debugger'
