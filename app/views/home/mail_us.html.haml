@@ -43,5 +43,7 @@
                   %label.message
                     = f.text_area :message, :placeholder => "Message"
                   .buttons2
-                    %a.link2{"data-type" => "reset", :href => "#"} Clear
                     = f.submit "Submit"
+                    -#%a.link2{"data-type" => "reset", :href => "#"} Clear
+                  .button-clear 
+                    = f.submit "Clear Form", :type => "reset"

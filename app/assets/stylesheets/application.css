@@ -204,14 +204,14 @@ h3 a:hover{color:#3585b7;}
 #contact-form {padding:0px 0 0 0;}
 #contact-form .success {width:246px;  padding:10px;}
 #contact-form textarea, #contact-form input {margin:0;font-size:13px; border:1px solid #e5e5e5; color:#919499; padding:9px 13px;outline:none; position:relative; font-family:Arial, Helvetica, sans-serif;background:#fff;}
-#contact-form input {width:319px;float: left;}
+#contact-form input {width:300px;float: left;}
 #contact-form textarea {overflow:auto; width:592px; height:255px;resize:none; float:left; margin: 0 0 0 0;}	
 #contact-form label {display:inline-block; min-height:46px; overflow:hidden;}
 #contact-form label.message { display:block; padding-bottom:0; }
 #contact-form .link2{margin-left:12px;}
 #contact-form .error, #contact-form .empty, #contact-form .success {display:none;}	
 #contact-form .error, #contact-form .empty {text-align:left; color:red; font-size:11px; float: left;}
-#contact-form .buttons2 {overflow:hidden;text-align:right; position:relative; clear:both; padding-top:25px;}
+#contact-form .buttons2 {overflow:hidden;text-align:right; position:relative; clear:both; padding-top:25px; float:left;}
 #contact-form .buttons2 a {
 	cursor:pointer;
 	margin-top:0;
@@ -325,4 +325,11 @@ footer .social a:hover img{ margin-top:-30px;}
 	color: #D00;
 	padding-left: 5px;
 	font-size: 12px;
+}
+
+/******************************Afrails Custom Styles ************************/
+/*************************Form Buttons *****************************/
+.button-clear {
+               float: left;
+               padding-top: 25px;
 }
