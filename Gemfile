@@ -42,6 +42,7 @@ group :development, :test do
   #gem 'sqlite3'
   gem 'blogit'
   gem 'devise'
+  gem 'google-analytics-rails'
 end
 
 group :production do
@@ -53,6 +54,7 @@ group :production do
   gem 'haml-rails'
   gem 'unicorn'
   gem 'rvm-capistrano'
+  gem 'google-analytics-rails'
 end
 
 # To use ActiveModel has_secure_password
