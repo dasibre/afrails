@@ -1,4 +1,5 @@
 / ==============================SLIDER================================
+- provide(:title, "Your personal Web Development Service")
 .slider_box
   .blue_glow
   .round_box
@@ -12,8 +13,8 @@
             %img{:alt => "", :src => "images/slide2.png"}/
     .banner
       .inner
-        Welcome to Afrails, your local webshop, where we develop web solutions to your business problems.
-        %span Let us transform your passions and objectives into solutions for your business.
+        .action Have an idea for a web business? #{link_to 'Contact us!', new_contact_path}
+        %span Let us transform your passions and objectives into solutions for your business or help you build a new business. 
 / ==============================content================================
 %section#content.cont_pad
   .box1

@@ -2,7 +2,7 @@
 <html>
 <head>
 <%= render 'layouts/mobify' %>
-  <title>Afrails</title>
+  <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag 'reset.css', :media => "screen, projection" %>
   <%= stylesheet_link_tag 'skeleton.css', :media => "screen, projection" %>
   <%= stylesheet_link_tag 'superfish.css', :media => "screen, projection" %>
