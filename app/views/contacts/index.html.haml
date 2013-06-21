@@ -1,0 +1,11 @@
+%section#content
+  .top_box
+    .inner
+      .container_12 
+        %ul.contacts
+          - @contacts.each do |contact|
+            #test
+              %li= contact.name
+              %li= contact.email
+              %li= contact.phone
+              %li= contact.message
