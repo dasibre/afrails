@@ -1,3 +1,4 @@
+<% provide(:title, "Afrails blog, tips and info on web d&d") %>
 <section id="content">
 <div class="top_box">
 <div class="inner">
@@ -5,7 +6,7 @@
 <div class="wrapper">
 <article class="grid_8">
 <div class="pad_box">
- <h2 class="ind">Blogging is fun, oh really</h2>
+ <h2 class="ind">Our blog</h2>
 	<ul class="blog_list">
 <%= login_required class: "actions", id: "new_blog_post_link" do %>
   <%= link_to t(:new_blog_post, scope: 'blogit.posts'), new_post_path %>

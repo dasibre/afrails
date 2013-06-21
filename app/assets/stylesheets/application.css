@@ -333,3 +333,12 @@ footer .social a:hover img{ margin-top:-30px;}
                float: left;
                padding-top: 25px;
 }
+
+.inner .action a {
+	color: white;
+	text-decoration: underline;
+}
+
+.inner .action a:hover {
+	color: #05E623;
+}
