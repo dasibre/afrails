@@ -1,6 +1,11 @@
 Afrails::Application.routes.draw do
+  root :to => 'home#index'
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
   resources :contacts, :only => [:index, :new, :create]
   devise_for :users, :path => '', path_names: {sign_in: "afadmin", sign_out: "logout"}
+  ActiveAdmin.routes(self)
   #get 'login', => "devise/sessions#new"
 
   match 'home', :to => 'home#index'
@@ -58,7 +63,7 @@ Afrails::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'home#index'
+   
 
   # See how all your routes lay out with "rake routes"
 
