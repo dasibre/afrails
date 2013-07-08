@@ -58,9 +58,9 @@ group :production do
   gem 'unicorn'
   gem 'rvm-capistrano'
   gem 'google-analytics-rails'
-  #gem 'activeadmin'
-  #gem 'sass-rails'
-  #gem "meta_search",    '>= 1.1.0.pre'
+  gem 'activeadmin'
+  gem 'sass-rails'
+  gem 'meta_search',    '>= 1.1.0.pre'
 end
 
 # To use ActiveModel has_secure_password
