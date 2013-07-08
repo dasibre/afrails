@@ -7,7 +7,7 @@ module ApplicationHelper
     end
 
     def full_title(page_title)
-    	base_title = "Afrails Web design and development Services"
+    	base_title = "Afrails: Personal,blog,ecommerce website & web applicaiton development"
     	if page_title.empty?
     		base_title
     	else

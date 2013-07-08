@@ -1,5 +1,10 @@
 class ContactsController < ApplicationController
 
+ #before_filter :authenticate_user!, :except => [:new, :create]
+  
+  def index
+      @contacts = Contact.find_all_ordered
+  end
 	def new
 		@contact = Contact.new
 		render 'home/mail_us'
